@@ -18,7 +18,7 @@
 }
 
 .sidebar-header {
-  height: 60px;
+  height: 64px;
   background-color: #178f6b;
   color: white;
   display: flex;
@@ -54,7 +54,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #e5ddd5;
+  background-color: #daccbf;
   position: relative;
 }
 
@@ -87,4 +87,44 @@
   bottom: 70px;
   left: 10px;
   z-index: 1000;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #e5ddd5;  */
+  background: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-size: contain;          
+  background-position: center;            
+  background-attachment: fixed;    
+
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-bottom-right-radius: 0;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-bottom-left-radius: 0;
+}
+
+.align{
+  display: flex;
+  gap: 10px;
 }

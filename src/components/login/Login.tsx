@@ -83,7 +83,7 @@ export default function Login() {
         catch (error) {
             // alert("Invalid username or password")
             showSnackbar("Invalid Username Or Password")
-            setTimeout(() => navigate("/register"),500)
+            // setTimeout(() => navigate("/register"),500)
 
         }
     };
@@ -99,7 +99,7 @@ export default function Login() {
         catch (error) {
             // alert("Google sign in failed")
             showSnackbar("User Logged In Successfully")
-            setTimeout(() => navigate("/register"),500)
+            // setTimeout(() => navigate("/register"),500)
         }
     };
     
