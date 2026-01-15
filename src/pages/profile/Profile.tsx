@@ -18,7 +18,7 @@ function Profile() {
   const [photoURL, setPhotoURL] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // 🔹 Fetch existing profile
+
   useEffect(() => {
     if (!auth.currentUser) return;
 
@@ -81,7 +81,6 @@ function Profile() {
           Edit Profile
         </Typography>
 
-        {/* Avatar */}
         <Box display="flex" justifyContent="center" mb={2}>
           <Avatar
             src={photoURL}
@@ -96,7 +95,6 @@ function Profile() {
           </Avatar>
         </Box>
 
-        {/* Image URL */}
         <TextField
           fullWidth
           label="Profile Image URL"
@@ -106,7 +104,6 @@ function Profile() {
           margin="normal"
         />
 
-        {/* Username */}
         <TextField
           fullWidth
           label="Username"
@@ -116,7 +113,7 @@ function Profile() {
           margin="normal"
         />
 
-        {/* Bio */}
+
         <TextField
           fullWidth
           label="About you"
@@ -127,7 +124,6 @@ function Profile() {
           margin="normal"
         />
 
-        {/* Save Button */}
         <Button
           fullWidth
           variant="contained"
