@@ -36,6 +36,7 @@
   padding: 12px 15px;
   cursor: pointer;
   border-bottom: 1px solid #eee;
+
 }
 
 .user-item:hover {
@@ -128,3 +129,27 @@
   display: flex;
   gap: 10px;
 }
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.status-dot {
+  margin-left: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.status-dot.online {
+  background-color: #25d366;
+}
+
+/* .status-dot.offline {
+  background-color: gray;
+} */
+

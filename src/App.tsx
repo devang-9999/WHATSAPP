@@ -4,6 +4,7 @@ import Login from './components/login/Login';
 import SignUp from './components/register/Register';
 import Main from './pages/main/Main';
 import ProtectedRoute from './components/routes/ProtectedRoute';
+import Profile from './pages/profile/Profile';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Main/>
             </ProtectedRoute>}
           />
+           <Route path='/profile' element={<Profile/>}/>
         </Routes>
       </BrowserRouter>
     </div>
